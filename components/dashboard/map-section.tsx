@@ -711,9 +711,9 @@ export function MapSection() {
               </div>
               <ScrollArea className="h-[450px]">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-                  {wardVoters.map((v) => (
+                  {wardVoters.map((v, index) => (
                     <button
-                      key={v.voter_id}
+                      key={`${v.voter_id}-${selectedWard}-${index}`} // Unique key combining voter_id, ward, and index
                       onClick={() => setSelectedVoter(v)}
                       className="flex items-center gap-3 p-3 rounded-lg border border-border bg-card hover:border-primary/30 hover:bg-muted/30 transition-all text-left"
                     >
