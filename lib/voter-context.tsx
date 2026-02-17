@@ -145,7 +145,7 @@ export function VoterProvider({ children }: { children: ReactNode }) {
     } finally {
       setIsLoading(false)
     }
-  }, [filters.search, filters.gender, filters.municipality, filters.ward, filters.booth, filters.ageRange])
+  }, [filters.search, filters.gender, filters.municipality, filters.ward, filters.booth])
 
   // Load data when filters change (debounced)
   useEffect(() => {
