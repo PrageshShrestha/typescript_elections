@@ -1,2 +1,2 @@
 
-![Description] (image.png)
+![Description](image.png)
